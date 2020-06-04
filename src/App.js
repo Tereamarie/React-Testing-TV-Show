@@ -33,6 +33,11 @@ export default function App() {
   }
   return (
     <div className="App">
+       <div>
+     <h1>Welcome THE TV SHOW APP! </h1>
+    <input name="text" type="text" placeholder="Search" />
+     <button onClick={handleSelect}>Search</button>
+  </div>
       <img className="poster-img" src={show.image.original} alt={show.name} />
       <h1>{show.name}</h1>
       {parse(show.summary)}
